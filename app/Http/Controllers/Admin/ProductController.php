@@ -4,6 +4,8 @@ namespace App\Http\Controllers\Admin;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller; 
 use App\User;
+use App\Models\Product_cat;
+use App\Models\Sub_cat;
 use App\Models\Products;
 use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
@@ -32,21 +34,13 @@ class ProductController extends Controller
           
            $products->discount= $request->input('Discount');
            $products->priority= $request->input('priority');
-   
            $products->title= $request->input('meta_title');
            $products->meta_description= $request->input('meta_description');
            $products->keywords= $request->input('meta_keyword');
-
            $products->rating= $request->input('rating');
-           
+           $products->subcategory_id =$request->input('subcategory_id');
            $products->delivery_charges= $request->input('delivery_charges');
            $products->additional_info= $request->input('additional_info');
-
-
-         //  $products->new_arrival_products= $request->input('new_arrival_products')==true ? '1':'0';
-        //  $products->featured_products= $request->input('featured_products')==true ? '1':'0';
-       //  $products->popular_products= $request->input('popular_products')==true ? '1':'0';
-      //  $products->offer_products= $request->input('offer_products')==true ? '1':'0';
            $products->status= $request->input('status')==true ? '1':'0';
            $image1 =$request->file('image1');
            if($request->hasfile('image1'))
@@ -97,6 +91,7 @@ class ProductController extends Controller
         $products->price= $request->input('price');
         $products->discount= $request->input('Discount');
         $products->rating= $request->input('rating');
+        $products->subcategory_id =$request->input('subcategory_id');
         $products->priority= $request->input('priority');
 
 
@@ -168,7 +163,7 @@ class ProductController extends Controller
             $products->image4=$product_Image_name;
 
         }
-        $products->save();
+        $products->update();
         return redirect()->back()->with('status','Product Data Updated Successfully Successfully');   
     }
     public function deleteproduct(Request $request, $id)
@@ -203,5 +198,9 @@ class ProductController extends Controller
             $delete = Products::find($id);
             $delete->delete();
             return redirect()->back()->with('status','Product Permanently Deleted  Successfully !!');
+    }
+    public function dropdown(){
+        $subcategory=Sub_cat::all();
+        return view('dashboards.admin.products.add',['subcategory'=>$subcategory]);
     }
 }

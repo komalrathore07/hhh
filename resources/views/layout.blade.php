@@ -8,16 +8,23 @@
             <title>@yield('title')</title>
             <meta name="keywords" content="@yield('keywords')">
             <meta name="description" content="@yield('description')">
+            <meta name="p:domain_verify" content="a54f44e1a87da8b6bd392c50c109ed20"/>
              <!-- Favicons -->
             <link href="{{asset('assets/img/Logo-Square.png')}}" rel="icon">
             <link href="{{asset('assets/img/Logo-Square.png')}}" rel="apple-touch-icon">
             <link href="{{asset('css/responsivecode.css')}}" rel="stylesheet"> 
              
-            <link href="{{asset('css/main.css')}}" rel="stylesheet">
+            <!-- <link href="{{asset('css/main.css')}}" rel="stylesheet"> -->
              
             <link href="{{asset('css/richtext.min.css')}}" rel="stylesheet">
              
             <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
+
+             <!-- Font Awesome -->
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css" />
+
+            <!-- Google Fonts Roboto -->
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" />
               
             <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
            
@@ -43,9 +50,13 @@
     </head>
     <body id="body" class="contentfont" style="background:#f2f2f2;">
      
-      
+   
     @include('Reusable_components.user.header')
+    <br></br>
+    <div class="container-fluid" style="margin-top:100px">
+        
      @yield('content')
+</div>
      @include('Reusable_components.user.footer')
     <script src="{{asset('assets/js/main.js')}}">  </script>
     <script src="{{asset('js/main.js')}}">  </script>

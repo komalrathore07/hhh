@@ -20,7 +20,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('description');
             $table->string('url');
-            $table->integer('rating')->nullable();
+            $table->string('rating');
+            $table->bigInteger('subcategory_id')->unsigned();
             $table->integer('price')->nullable();
             $table->integer('discount')->nullable();
             
@@ -39,6 +40,7 @@ class CreateProductsTable extends Migration
             $table->integer('delivery_charges')->nullable();
             
             $table->string('additional_info')->nullable();
+            // $table->foreign('subcategory_id')->references('id')->on('sub_cat');
                 
             $table->timestamps();
         });

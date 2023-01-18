@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.admin')
 @section('title') Banarsi lehnga House @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection
@@ -7,7 +7,7 @@
     <h3  class="black-text" style="font-weight:bold;"><a href="{{url('admin-dash')}}">Admin Dashboard</a></h3>
 
 <p class="white-text" style="font-weight:bold;"> 
-    <a href="{{url('admin-products')}}" class="badge badge-pill btn-green   disabled px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
+    <a href="{{url('admin-products')}}" class="badge badge-pill btn-green   px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
         
     <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-outline-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
     <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
@@ -36,6 +36,7 @@
                         <thead>
                            
                             <th>Name</th>
+                            <th>Subcategory Name</th>
                             <th>Description</th>
                             <th>Images</th>
                             <th>Price</th>
@@ -48,6 +49,7 @@
                             <tr>
     
                                 <td>{{$item->name}}</td>
+                                <td>{{$item->sub_cat->subcat_name}}</td>
                                 <td>{{$item->description}}</td>
                              
     

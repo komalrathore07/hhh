@@ -37,6 +37,8 @@ Route::get('/Contact', function () {
     return view('Contact');
 });
 
+Route::get('/collection/{scategory_subcat_slug}','HomeController@subcatview');
+
 
 Auth::routes();
 
@@ -94,6 +96,7 @@ Route::group(['middleware'=>['auth','isAdmin']],function ()
     Route::get('/admin-products', 'Admin\LinksController@products');
     Route::get('/admin-add-product', 'Admin\LinksController@show_add_product_screen');
     Route::post('/admin-store-product','Admin\ProductController@Store');
+    Route::any('/admin-add-product','Admin\ProductController@dropdown');
     Route::get('/admin-product-edit/{id}','Admin\LinksController@ShowEditingScreen');
     Route::put('/admin-product-update/{id}','Admin\ProductController@update');    
     Route::get('admin-product-delete/{id}','Admin\ProductController@deleteproduct');
@@ -102,19 +105,34 @@ Route::group(['middleware'=>['auth','isAdmin']],function ()
     Route::get('admin-product-delete-confirm/{id}','Admin\ProductController@confirmdelete');
     Route::get('admin-Orders','Admin\LinksController@showorders');
     Route::get('admin-Transactions','Admin\LinksController@showTransactions');
-       Route::get('admin-news-letter','Admin\LinksController@showNewsLetter');
-       
-Route::get('admin-Order-Status/{id}', 'Admin\Order_Status_Controller@Order_Status');
-  Route::post('admin-Update-Shipping-Status','Admin\Order_Status_Controller@Update_Shipping_Status');
-  Route::post('admin-Update-Delivery-Status','Admin\Order_Status_Controller@Update_Delivery_Status');
-  
-  Route::post('admin-Update-Payment-Status','Admin\Order_Status_Controller@Update_Payment_Status');
+    Route::get('admin-news-letter','Admin\LinksController@showNewsLetter');
+    Route::any('admin-category-add','Admin\categoryController@create')->name('dashboards.admin.category.add');
 
-  Route::post('admin-Update-paymentmode-Status','Admin\Order_Status_Controller@Update_paymentmode_Status');
+  //category
+
+    Route::any('/admin-category', 'Admin\categoryController@store');
+
+ //subcategory
+
+    Route::any('/admin-Subcategory', 'Admin\SubcategoryController@index')->name('dashboards.admin.category.index');   
+    Route::any('admin-subcategory-add','Admin\SubcategoryController@create')->name('dashboards.admin.category.subadd');
+    Route::any('admin-subcategory-add','Admin\SubcategoryController@dropdown')->name('dashboards.admin.category.subadd');
+    Route::get('/admin-subcategory-edit/{id}','Admin\SubcategoryController@ShowEditingScreen');
+    Route::put('/admin-subcategory-update/{id}','Admin\SubcategoryController@update');    
+    Route::get('admin-subcategory-delete/{id}','Admin\SubcategoryController@deleteCategory');
+    Route::post('/admin-Subcategory', 'Admin\SubcategoryController@store');
+    
+     //ORDER
+    Route::get('admin-Order-Status/{id}', 'Admin\Order_Status_Controller@Order_Status');
+    Route::post('admin-Update-Shipping-Status','Admin\Order_Status_Controller@Update_Shipping_Status');
+    Route::post('admin-Update-Delivery-Status','Admin\Order_Status_Controller@Update_Delivery_Status');
+    Route::post('admin-Update-Payment-Status','Admin\Order_Status_Controller@Update_Payment_Status');
+    Route::post('admin-Update-paymentmode-Status','Admin\Order_Status_Controller@Update_paymentmode_Status');
  
 Route::get('admin-Order-Cancel/{id}', 'Admin\Order_Status_Controller@Order_Cancel');
 
 Route::get('admin-Order-Re-Cancel/{id}', 'Admin\Order_Status_Controller@Order_Re_Cancel');
+
     
 });
 

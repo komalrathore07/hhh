@@ -12,6 +12,7 @@ class Products extends Model
         'name',
         'description',
         'rating',
+        'subcategory_id',
         'price',
         'discount',
         'url',
@@ -22,10 +23,11 @@ class Products extends Model
         'title',
         'keywords',
         'meta_description',
-        'status',
-        
-        
-
-
-    ];
+        'status'
+        ];
+    public function sub_cat()
+    {
+      return $this->belongsTo(Sub_cat::class,'subcategory_id','id');
+    
+    }
 }

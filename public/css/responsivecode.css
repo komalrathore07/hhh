@@ -8,11 +8,13 @@
     }
     #slide_show_in_desktop_mode
     {
+        
         display:none;
     }
     #slide_show_in_mobile_mode
     {
         display:block;
+        margin-top: 45px;
     }
     #teaminthedesktopmode
     {
@@ -83,11 +85,12 @@
     }
     .navbar-brand
     {
-        margin-right: 35%;
+       
     }
     .slideshowimage
     {
             height:130px;
+            
     }
 
 }

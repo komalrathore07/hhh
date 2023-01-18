@@ -1,4 +1,4 @@
- @extends('layout')
+ @extends('layouts.admin')
 @section('title') Banarsi lehnga House @endsection
 @section('keywords')   @endsection
 @section('description')   @endsection
@@ -32,7 +32,7 @@
     <div class="col-md-12">
         <div class="card">
             <div class="card-body">
-              <form method="POST" action="{{url('admin-product-update/'.$Products->id)}}" enctype="multipart/form-data">
+              <form  method="POST" action="{{url('admin-product-update/'.$Products->id)}}" enctype="multipart/form-data">
                   @csrf
                   {{method_field('PUT')}}
               <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -112,7 +112,7 @@
                             <div class="form-group">
                                 <label>Rating</label>
                                 <select class="form-control" name="rating">
-                                    <option value="{{$Products->rating}}" disabled>{{$Products->rating}}</option>
+                                    <option value="{{$Products->rating}}">{{$Products->rating}}</option>
                                      <option value="1">1</option>
                                      <option value="2">2</option>
                                       <option value="3">3</option>
@@ -121,6 +121,19 @@
                                 </select> 
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Categories</label>
+                                <select class="form-control"  name="subcategory_id">
+                                     <option value="{{$Products->subcategory_id}}">{{$Products->sub_cat->subcat_name}}</option>
+                                     @foreach($subcategory as $item)
+                                        <option value="{{$item->id}}">{{$item->subcat_name}}</option>
+                                    @endforeach
+                                     
+                                </select> 
+                            </div>
+                        </div>
+
                           <div class="col-md-12">
                               <div class="form-group">
                               <button type="submit" class="btaobtn btaobtn-success">Update</button>
@@ -216,7 +229,7 @@
                                <div class="col-md-6">
                               <div class="form-group">
                                   <label> Delivery Charges</label>
-                                  <input type="number" class="form-control" name="delivery_charges"  required min="1" placeholder="Delivery Charges " value="{{$Products->delivery_charges}}">
+                                  <input type="number" class="form-control" name="delivery_charges"  min="1" placeholder="Delivery Charges " value="{{$Products->delivery_charges}}">
                               </div>
                           </div>
                             

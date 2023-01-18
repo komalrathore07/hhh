@@ -19,6 +19,7 @@
                             <li><a href="{{url('admin-all-users')}}" >Registered Users</a></li>
                             <li><a href="{{url('admin-Orders')}}" >Orders</a></li>
                             <li><a href="{{url('admin-Transactions')}}" >Transaction_Details</a></li>
+                            <li><a href="{{url('admin-category')}}" >Categories</a></li>
                             <li><a href="{{url('admin-products')}}" >Products</a></li>
                             <a   href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  {{ __('Logout') }}</a>
                             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">

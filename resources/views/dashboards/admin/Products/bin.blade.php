@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.admin')
 @section('title') Banarsi lehnga House @endsection
 @section('keywords') Home,About,Contact,Car @endsection
 @section('description') Write some descripton about the webpage @endsection

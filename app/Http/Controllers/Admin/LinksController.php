@@ -5,6 +5,7 @@ use Illuminate\Http\Request;
 use App\Http\Controllers\Controller; 
 use App\User;
 use App\Models\Products;
+use App\Models\Sub_cat;
 use App\Models\NewsLetter;
 class LinksController extends Controller
 {
@@ -41,11 +42,13 @@ class LinksController extends Controller
         return view('dashboards.admin.Products.add');
 
     }
-    public function  ShowEditingScreen($id)
+    public function ShowEditingScreen($id)
     {
        $Products = Products::find($id); 
+        $subcategory=Sub_cat::where('category_id','!=','null')->get();
+       
 
-       return view("dashboards.admin.Products.edit")->with('Products',$Products);
+       return view("dashboards.admin.Products.edit")->with('Products',$Products)->with('subcategory',$subcategory);
     }
     public function recycleproducts()
     {
@@ -53,18 +56,22 @@ class LinksController extends Controller
          return view('dashboards.admin.Products.bin')->with('Products', $Products);
     }
 
-    public function     showorders()
+    public function showorders()
     {
         return view('dashboards.admin.orders');
     }
-    public function     showTransactions()
+    public function showTransactions()
     {
         return view('dashboards.admin.Transactions');
     }
-     public function     showNewsLetter()
+     public function showNewsLetter()
     {
         $NewsLetter=NewsLetter::select('email','name')->distinct('name')->paginate(10);
         return view('dashboards.admin.NewsLetter')->with('NewsLetter', $NewsLetter);
+    }
+    public function categories()
+    {
+        
     }
     
     

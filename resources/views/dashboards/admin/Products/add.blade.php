@@ -1,4 +1,4 @@
-@extends('layout')
+@extends('layouts.admin')
 @section('title') Banarsi lehnga House @endsection
 @section('keywords')   @endsection
 @section('description')   @endsection
@@ -10,7 +10,7 @@
 
             <a href="{{url('admin-products')}}" class="badge badge-pill btn-outline-green     px-3 py-2">  <i class="fas fa-file-powerpoint"></i>  &nbsp; Show All Products</a> 
         
-            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-dark disabled  px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
+            <a href="{{url('admin-add-product')}}" class="badge badge-pill btn-dark   px-3 py-2">   <i class="fas fa-plus"></i>  &nbsp; Add New Product</a> 
             <a href="{{url('admin-bin-products')}}" class="badge badge-pill btn-outline-danger px-3 py-2"><i class="fas fa-dumpster"></i> Recycle Bin</a>
 
         </p>
@@ -108,15 +108,31 @@
                           <div class="col-md-6">
                             <div class="form-group">
                                 <label>Rating</label>
-                                <select class="form-control" name="rating">
+                                <select class="form-control"  name="rating">
                                      <option value="1">1</option>
                                      <option value="2">2</option>
-                                      <option value="3">3</option>
-                                       <option value="4">4</option>
-                                        <option value="5">5</option>
+                                     <option value="3">3</option>
+                                     <option value="4">4</option>
+
+                                     <option value="5">5</option>
+                                     
                                 </select> 
                             </div>
                         </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Categories</label>
+                                <select class="form-control"  name="subcategory_id">
+                                     <option value="">Select subcategory</option>
+                                     @foreach($subcategory as $item)
+                                     <option value="{{$item->id}}">{{$item->subcat_name}}</option>
+                                    @endforeach
+                                     
+                                </select> 
+                            </div>
+                        </div>
+
+                        
                           <div class="col-md-12">
                               <div class="form-group">
                               <button type="submit" class="btaobtn btaobtn-success">Save</button>

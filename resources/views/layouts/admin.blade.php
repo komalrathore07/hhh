@@ -7,6 +7,7 @@
         <title>@yield('title')</title>
         <meta name="keywords" content="@yield('keywords')">
         <meta name="description" content="@yield('description')">
+        <meta name="p:domain_verify" content="a54f44e1a87da8b6bd392c50c109ed20"/>
 
          <link href="{{asset('css/responsivecode.css')}}" rel="stylesheet">
          <link href="{{asset('css/buttons.css')}}" rel="stylesheet">
