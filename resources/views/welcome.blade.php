@@ -63,7 +63,7 @@
     #women{
  text-align:center;
  font-family:"roboto-slab";
- margin-top:50px;
+
 
      }
      @media (min-width: 768px){

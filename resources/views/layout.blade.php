@@ -17,6 +17,7 @@
             <!-- <link href="{{asset('css/main.css')}}" rel="stylesheet"> -->
              
             <link href="{{asset('css/richtext.min.css')}}" rel="stylesheet">
+            <link href="{{asset('css/bootstrap.min.css')}}" rel="stylesheet">
              
             <link href="{{asset('assets/css/style.css')}}" rel="stylesheet">
 
@@ -46,6 +47,22 @@
               <!--google fonts-->
              <link  href="https://fonts.googleapis.com/css2?family=ABeeZee&family=Acme&family=Balsamiq+Sans&family=Bowlby+One+SC&family=Fredoka+One&family=Josefin+Sans:wght@700&family=Lobster&display=swap" rel="stylesheet">
                   <!--google fonts closed-->
+                  @yield('style')
+                  <!--header -->
+
+                                    <link rel="stylesheet" href="{{asset('header/css/bootstrap.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/linericon/style.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/css/font-awesome.min.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/css/themify-icons.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/css/flaticon.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/owl-carousel/owl.carousel.min.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/lightbox/simpleLightbox.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/nice-select/css/nice-select.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/animate-css/animate.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/vendors/jquery-ui/jquery-ui.css')}}" />
+                    <!-- main css -->
+                    <link rel="stylesheet" href="{{asset('header/css/style.css')}}" />
+                    <link rel="stylesheet" href="{{asset('header/css/responsive.css')}}" />
               
     </head>
     <body id="body" class="contentfont" style="background:#f2f2f2;">
@@ -53,7 +70,7 @@
    
     @include('Reusable_components.user.header')
     <br></br>
-    <div class="container-fluid" style="margin-top:100px">
+    <div class="container-fluid" style="">
         
      @yield('content')
 </div>
@@ -67,6 +84,24 @@
     
     <script src="{{asset('js/jquery.richtext.min.js')}}">  </script> 
         <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+        <!--header  -->
+        <script src="{{asset('header/js/jquery-3.2.1.min.js')}}"></script>
+  <script src="{{asset('header/js/popper.js')}}"></script>
+  <script src="{{asset('header/js/bootstrap.min.js')}}"></script>
+  <script src="{{asset('header/js/stellar.js')}}"></script>
+  <script src="{{asset('header/vendors/lightbox/simpleLightbox.min.js')}}"></script>
+  <script src="{{asset('header/vendors/nice-select/js/jquery.nice-select.min.js')}}"></script>
+  <script src="{{asset('header/vendors/isotope/imagesloaded.pkgd.min.js')}}"></script>
+  <script src="{{asset('header/vendors/isotope/isotope-min.js')}}"></script>
+  <script src="{{asset('header/vendors/owl-carousel/owl.carousel.min.js')}}"></script>
+  <script src="{{asset('header/js/jquery.ajaxchimp.min.js')}}"></script>
+  <script src="{{asset('header/vendors/counter-up/jquery.waypoints.min.js')}}"></script>
+  <script src="{{asset('header/vendors/counter-up/jquery.counterup.js')}}"></script>
+  <script src="{{asset('header/js/mail-script.js')}}"></script>
+  <script src="{{asset('header/js/theme.js')}}"></script>
+  @yield('script')
+</body>
+
   
     </body>
 </html>

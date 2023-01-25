@@ -6,7 +6,7 @@
 }
 #carousel-example-multi{
  
-padding-top: 10.5rem !important;
+padding-top: 0.5rem !important;
 
 }
 </style>

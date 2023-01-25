@@ -71,6 +71,7 @@
                           @csrf
 
                               <h3 style="font-weight:bold;">{{$Product->name}}</h3>
+                             <a> <h5 style="font-weight:bold;">{{$Product->sub_cat->subcat_name}}</h5></a>
                           @if($Product->rating==1)
                             <span class="fa fa-star checked"></span>
                               <span class="fa fa-star"></span>

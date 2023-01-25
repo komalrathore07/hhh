@@ -15,7 +15,7 @@ class HomeController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('auth');
+        // $this->middleware('auth');
     }
 
     /**
@@ -31,7 +31,7 @@ class HomeController extends Controller
     {
         $scategory = Sub_cat::where('subcat_slug',$scategory_subcat_slug)->first();
          $subcategory_id = $scategory->id;
-
+         
          $products = Products::where('subcategory_id',$subcategory_id)->where('status','=','1')->get();
          
        return view('components.products')->with('products',$products)->with('scategory',$scategory);

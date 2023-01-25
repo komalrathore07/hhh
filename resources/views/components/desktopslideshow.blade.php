@@ -1,15 +1,15 @@
 
 
- <section id="hero" class="contentfont animated fadeIn slow"  >
+ <section id="hero" class="contentfont animated fadeIn slow" style="  margin-top: -20px;"  >
         
         <section  class="hero-container" data-aos="fade-up">
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
+                <div class="carousel-inner" style="  margin-top: -20px;">
 
                       <div class="carousel-item active">
                        
                             <div class="view overlay">
-                              <div class="row" >
+                              <div class="row"  >
                               
                               <img class="img-fluid slideshowimage" src=" {{asset('slideshow/s1.png')}}" alt="Slide-1">
                              
