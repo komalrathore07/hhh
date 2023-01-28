@@ -109,8 +109,8 @@ padding: 10px 0 !important;
           <div class="col-lg-12 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                
-                <img src="images/1.jpg" class="img-fluid" />
+              <a href="/collection/bridal-lehnga">
+                <img src="images/1.jpg" class="img-fluid" /></a>
                 <a href="/collection/bridal-lehnga">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -127,7 +127,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/11.png" class="img-fluid" />
+              <a href="/collection/designer-gowns">
+                <img src="images/11.png" class="img-fluid" /></a>
                 <a href="/collection/designer-gowns">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -142,7 +143,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/12.png" class="img-fluid" />
+              <a href="/collection/designer-saree">
+                <img src="images/12.png" class="img-fluid" /></a>
                 <a href="/collection/designer-saree">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -154,7 +156,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/13.png" class="img-fluid" />
+              <a href="/collection/indo-western">
+                <img src="images/13.png" class="img-fluid" /></a>
                 <a href="/collection/indo-western">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -168,7 +171,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/14.png" class="img-fluid" />
+              <a href="/collection/anarkali-suits">
+                <img src="images/14.png" class="img-fluid" /></a>
                 <a href="/collection/anarkali-suits">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -183,7 +187,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/15.png" class="img-fluid" />
+              <a href="/collection/salwar-suits">
+                <img src="images/15.png" class="img-fluid" /></a>
                 <a href="/collection/salwar-suits">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -195,7 +200,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/16.png" class="img-fluid" />
+              <a href="/collection/phulkari">
+                <img src="images/16.png" class="img-fluid" /></a>
                 <a href="/collection/phulkari">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -208,7 +214,8 @@ padding: 10px 0 !important;
           <div class="col-lg-6 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/17.jpg" class="img-fluid" />
+              <a href="/collection/bridal-jewellery">
+                <img src="images/17.jpg" class="img-fluid" /></a>
                 <a href="/collection/bridal-jewellery">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -223,7 +230,8 @@ padding: 10px 0 !important;
           <div class="col-lg-6 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/18.jpg" class="img-fluid" />
+              <a href="/collection/bridal-flower-jewellery">
+                <img src="images/18.jpg" class="img-fluid" /></a>
                 <a href="/collection/bridal-flower-jewellery">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -255,8 +263,8 @@ padding: 10px 0 !important;
           <div class="col-lg-12 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                
-                <img src="images/21.jpg" class="img-fluid" />
+              <a href="/collection/mens-sherwani">
+                <img src="images/21.jpg" class="img-fluid" /></a>
                 <a href="/collection/mens-sherwani">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -273,7 +281,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/22.png" class="img-fluid" />
+              <a href="/collection/coat-pant">
+                <img src="images/22.png" class="img-fluid" /></a>
                 <a href="/collection/coat-pant">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -288,7 +297,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/23.png" class="img-fluid" />
+              <a href="/collection/jodhpuri-suits">
+                <img src="images/23.png" class="img-fluid" /></a>
                 <a href="/collection/jodhpuri-suits">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -300,7 +310,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/24.png" class="img-fluid" />
+              <a href="/collection/kurta-pajama">
+                <img src="images/24.png" class="img-fluid" /></a>
                 <a href="/collection/kurta-pajama">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -314,7 +325,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/25.png" class="img-fluid" />
+              <a href="/collection/jacket-kurta">
+                <img src="images/25.png" class="img-fluid" /></a>
                 <a href="/collection/jacket-kurta">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -329,7 +341,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/26.png" class="img-fluid" />
+              <a href="/collection/indo-western-mens">
+                <img src="images/26.png" class="img-fluid" /></a>
                 <a href="/collection/indo-western-mens">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -341,7 +354,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/27.png" class="img-fluid" />
+              <a href="/collection/basket-suits">
+                <img src="images/27.png" class="img-fluid" /></a>
                 <a href="/collection/basket-suits">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -354,7 +368,8 @@ padding: 10px 0 !important;
           <div class="col-lg-6 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/28.jpg" class="img-fluid" />
+              <a href="/collection/mens-jewellery">
+                <img src="images/28.jpg" class="img-fluid" /></a>
                 <a href="/collection/mens-jewellery">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -369,7 +384,8 @@ padding: 10px 0 !important;
           <div class="col-lg-6 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/29.jpg" class="img-fluid" />
+              <a href="/collection/mens-footwear">
+                <img src="images/29.jpg" class="img-fluid" /></a>
                 <a href="/collection/mens-footwear">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -400,8 +416,8 @@ padding: 10px 0 !important;
           <div class="col-lg-12 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                
-                <img src="images/31.jpg" class="img-fluid" />
+              <a href="/collection/maeyan-thali">
+                <img src="images/31.jpg" class="img-fluid" /></a>
                 <a href="/collection/maeyan-thali">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -418,7 +434,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-12 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/32.jpg" class="img-fluid" />
+              <a href="/collection/jai-mala">
+                <img src="images/32.jpg" class="img-fluid" /></a>
                 <a href="/collection/jai-mala">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -433,7 +450,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/33.jpg" class="img-fluid" />
+              <a href="/collection/engagement-ring-tray">
+                <img src="images/33.jpg" class="img-fluid" /></a>
                 <a href="/collection/engagement-ring-tray">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>
@@ -445,7 +463,8 @@ padding: 10px 0 !important;
           <div class="col-lg-4 col-md-6 mb-4">
             <div class="card">
               <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
-                <img src="images/34.jpg" class="img-fluid" />
+              <a href="/collection/sagun-box">
+                <img src="images/34.jpg" class="img-fluid" /></a>
                 <a href="/collection/sagun-box">
                   <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
                 </a>

@@ -53,6 +53,7 @@ This files table contents are outlined below>>>>>
 Default CSS
 =================================================*/
 @import url("https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap");
+@import url("https://cdn-uicons.flaticon.com/uicons-regular-rounded/css/uicons-regular-rounded.css 590");
 @import url("https://fonts.googleapis.com/css?family=Cabin:400,400i,500,500i,600,600i,700,700i&display=swap");
 body {
   padding: 0;
@@ -1574,39 +1575,39 @@ Main Banner CSS
 }
 
 .banner-bg1 {
-  background-image: url(../../assets/img/main-banner1.jpg);
+  background-image: url(../../header/img/main-banner1.jpg);
 }
 
 .banner-bg2 {
-  background-image: url(../../assets/img/main-banner2.jpg);
+  background-image: url(../../header/img/main-banner2.jpg);
 }
 
 .banner-bg3 {
-  background-image: url(../../assets/img/main-banner3.jpg);
+  background-image: url(../../header/img/main-banner3.jpg);
 }
 
 .banner-bg4 {
-  background-image: url(../../assets/img/offer-bg.jpg);
+  background-image: url(../../header/img/offer-bg.jpg);
 }
 
 .banner-bg5 {
-  background-image: url(../../assets/img/main-banner5.jpg);
+  background-image: url(../../header/img/main-banner5.jpg);
 }
 
 .banner-bg6 {
-  background-image: url(../../assets/img/main-banner6.jpg);
+  background-image: url(../../header/img/main-banner6.jpg);
 }
 
 .banner-bg7 {
-  background-image: url(../../assets/img/main-banner2.jpg);
+  background-image: url(../../header/img/main-banner2.jpg);
 }
 
 .banner-bg8 {
-  background-image: url(../../assets/img/main-banner2.jpg);
+  background-image: url(../../header/img/main-banner2.jpg);
 }
 
 .banner-bg9 {
-  background-image: url(../../assets/img/main-banner2.jpg);
+  background-image: url(../../header/img/main-banner2.jpg);
 }
 
 .banner-section {
@@ -4919,11 +4920,11 @@ Offer CSS
 }
 
 .offer-area.bg-image1 {
-  background-image: url(../../assets/img/offer-bg.jpg);
+  background-image: url(../../header/img/offer-bg.jpg);
 }
 
 .offer-area.bg-image2 {
-  background-image: url(../../assets/img/offer-bg2.jpg);
+  background-image: url(../../header/img/offer-bg2.jpg);
 }
 
 .offer-content {

@@ -142,7 +142,7 @@ $(document).ready(function (){
        <li class="nav-item">
           <a class="nav-link" href="#">Customized Outfit </a>
         </li>
-              <li><a href="/#About">About</a></li>
+              <li><a href="/about">About</a></li>
               <li><a href="/#contact">Contact Us</a></li>
 
   <li><a href="{{url('cart')}}" style="margin-left:15px;">   <i class="fas fa-shopping-cart "></i>

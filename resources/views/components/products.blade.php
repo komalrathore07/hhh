@@ -93,8 +93,8 @@
                             <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
                                 <div class="single-productsBox">
                                     <div class="products-image">
-                                        <a href="#">
-                                            <img src="{{asset('Uploads/Products/'.$item->image1)}}" class="main-image" alt="image" style="height:500;width:400;">
+                                        <a href="{{url('Shop/'.$item->url)}}">
+                                            <img src="{{asset('Uploads/Products/'.$item->image1)}}" class="main-image" alt="image" style="height:450px ;">
                                             <img src="{{asset('Uploads/Products/'.$item->image2)}}" class="hover-image" alt="image">
                                         </a>
         
@@ -131,7 +131,7 @@
                                     </div>
         
                                     <div class="products-content">
-                                   <a href="{{url('Shop/'.$item->url)}}">Category Name: <span class="category"> {{$item->sub_cat->subcat_name}}</span></a>
+                                   <a href="{{url('Shop/'.$item->url)}}"> <span class="category"> {{$item->sub_cat->subcat_name}}</span></a>
                                         <h3><a href="{{url('Shop/'.$item->url)}}">{{$item->name}}</a></h3>
                                         <div class="star-rating">
                                              @if($item->rating==1)
