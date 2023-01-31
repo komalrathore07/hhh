@@ -50,10 +50,10 @@ $(document).ready(function (){
   <li class="drop-down"><a href="#">  <i class="far fa-user-circle "></i>  My Account  <i class="fas fa-angle-down"></i></a>
        <ul>
             <li><a href="{{url('admin-dash')}}" ><i class="fas fa-tachometer-alt"></i>  Dashboard</a></li>
-            <li><a href="{{url('Help')}}"><i class="fas fa-headset"  ></i> Help</a></li>
-            <li><a href="{{url('profile')}}" ><i class="fas fa-user"></i>  Profile</a></li>
-            <li><a href="{{url('Orders')}}" > <i class="fas fa-table"></i> Orders</a></li>
-            <li><a href="{{url('Payments')}}" ><i class="fas fa-receipt"></i>  Transactions</a></li>
+            <li><a href="{{url('admin-news-letter')}}"><i class="fas fa-headset"  ></i>NewsLetter</a></li>
+            <li><a href="{{url('admin-all-users')}}" ><i class="fas fa-user"></i> All Users</a></li>
+            <li><a href="{{url('admin-Orders')}}" > <i class="fas fa-table"></i> Orders</a></li>
+            <li><a href="{{url('admin-Transactions')}}" ><i class="fas fa-receipt"></i>  Transactions</a></li>
              <a   href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">  <i class="fas fa-sign-in-alt"></i> {{ __('Logout') }}</a>
               <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                   @csrf

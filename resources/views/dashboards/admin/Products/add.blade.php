@@ -80,7 +80,7 @@
                           <div class="col-md-12">
                               <div class="form-group">
                                   <label>Small Description</label>
-                                  <textarea rows="4" class="form-control"  name="small_description"   placeholder="Small Description About Product"></textarea>
+                                  <textarea  class="form-control"  name="small_description"   placeholder="Small Description About Product"></textarea>
                               </div>
                           </div>
 

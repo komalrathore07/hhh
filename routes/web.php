@@ -12,7 +12,7 @@
 */
  Route::post('subscribe-news-letter','UserController@subscribe');
  
- Route::post('send-email','UserController@send_email');
+ Route::get('send-email','UserController@send_email');
 Route::get('/', function () {
     return view('welcome');
 });

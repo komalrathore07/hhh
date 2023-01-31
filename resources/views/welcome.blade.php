@@ -521,7 +521,7 @@ padding: 10px 0 !important;
 
                   </div>
 
-                  <iframe src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d412.8581208194774!2d77.6434072228083!3d14.605726057235447!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sADI%20Foundation%2C%20%233%20Akuthotapalli%2C%20SKU%2C%20Anantapur%20-515003!5e1!3m2!1sen!2sin!4v1617198303303!5m2!1sen!2sin" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1703.9394222612386!2d75.57559176347655!3d31.334718899999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x391a5a610ff0c90b%3A0x54a6e79764fe9d7c!2sBanarsi%20Lehnga%20House!5e0!3m2!1sen!2sin!4v1675059260586!5m2!1sen!2sin" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
 
               </div>

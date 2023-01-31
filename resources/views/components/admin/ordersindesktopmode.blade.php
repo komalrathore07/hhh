@@ -30,11 +30,13 @@
                                <td>{{$item->Amount}}</td>
                                <td> 
                                 
-                                <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Check Status</a>
+                                
                                  
                                  @if($item->Delivery_Status!='pending' || $item->Order_Cancel_Status==1)
+                                 <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2 disabled">Check Status</a>
                                   <a href="{{url('admin-Order-Status/'.$item->id.'')}}"    class="badge btaobtn btaobtn-danger px-2 py-2 disabled">Cancel Order</a>
                                   @else
+                                  <a href="{{url('admin-Order-Status/'.$item->id.'')}}" class="badge btaobtn btaobtn-primary px-2 py-2">Check Status</a>
                                       <a href="{{url('admin-Order-Cancel/'.$item->id.'')}}" class="badge btaobtn btaobtn-danger px-2 py-2">Cancel Order</a>
                                
                                  @endif

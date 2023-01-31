@@ -4,7 +4,7 @@
     
           <div class="logo mr-auto" >
             <!--  <h1 class="text-light"><a href="/">CompanYName</a></h1>  -->
-            <a href="/"><img src=" {{asset('assets/img/Logo.png')}}" alt="" class="img-fluid" style="height:90px;width:100%;" ></a>
+            <a href="/"><img src=" {{asset('assets/img/Logo.png')}}" alt="" class="img-fluid" style="height:90px;width:100%;margin-top:2px;" ></a>
             
           </div>
           <p class="mobile-nav-toggle"><i class="fas fa-bars"></i> </p>

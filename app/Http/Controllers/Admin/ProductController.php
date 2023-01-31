@@ -47,7 +47,7 @@ class ProductController extends Controller
            {
                $extension=$image1->getClientOriginalExtension();
                $product_Image_name=$products->url.'-1-.'.$extension;
-               $image1->move('Uploads/Products/',$product_Image_name);
+               $image1->move('./Uploads/Products/',$product_Image_name);
                $products->image1=$product_Image_name;
 
            }

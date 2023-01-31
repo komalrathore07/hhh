@@ -88,10 +88,13 @@
 
                     <div class="col-lg-9 col-md-12">
                         
-                             @foreach($products as $item)
+                            
                         <div id="products-collections-filter" class="row">
-                            <div class="col-lg-4 col-md-6 col-sm-6 products-col-item">
+                        @foreach($products as $item)
+                            <div class="col-sm-4 products-col-item">
+                            
                                 <div class="single-productsBox">
+                                
                                     <div class="products-image">
                                         <a href="{{url('Shop/'.$item->url)}}">
                                             <img src="{{asset('Uploads/Products/'.$item->image1)}}" class="main-image" alt="image" style="height:450px ;">
@@ -171,7 +174,7 @@
                                         </div>
                                         <div class="price">
                                           
-                                            <span class="new-price">Price : {{$item->price}}</span>
+                                            <span class="new-price">Price : ₹ {{$item->price}}</span>
                                           
                                         </div>
                                         <a href="/Shop/{{$item->url}}" class="btn  btn-primary    "> Shop Now</a>
@@ -185,10 +188,12 @@
                                     </span>
                                 </div>
                             </div>
+                    
                             @endforeach
-                       
-                        </div>
-
+                            
+                        </div>       
+                      
+</div>
                         <div class="pagination-area text-center">
                         
                         </div>

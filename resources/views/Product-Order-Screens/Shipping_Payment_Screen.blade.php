@@ -75,14 +75,14 @@
             <div class="row px-3">
                 <div class="col-md-12">
                     <div class="form-group">
-                            <input type="radio"  name="Payment_Method" value="Online"> Online :     <img src="http://i0.wp.com/ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg" style="width:200px;">
+                            <input type="radio"  name="paymentmode" value="Online"> Online :     <img src="http://i0.wp.com/ecoheater.ie/wp-content/uploads/2018/10/cards-.jpg" style="width:200px;">
             
                     </div>
                 </div>
                 
                 <div class="col-md-12">
                     <div class="form-group">
-                            <input type="radio" name="Payment_Method" value="COD"> COD(Cash On Delivery) :   
+                            <input type="radio" name="paymentmode" value="COD"> COD(Cash On Delivery) :   
                     </div>
                 </div>
                
@@ -128,3 +128,11 @@
         <!--Form Data For Order Details,....Ended Here-->
     </form>
 </div>
+<script>
+    function selectPaymentMethod()
+    {
+alert('text');
+    }
+
+
+</script>

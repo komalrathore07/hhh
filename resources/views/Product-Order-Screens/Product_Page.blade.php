@@ -19,7 +19,7 @@
 
 <script>
     $(document).ready(function() {
-        $("#main_image, .xzoom-gallery").xzoom({fadeIn:true;fadeOut:true;position:inside;});
+        $("#main_image, .xzoom-gallery").xzoom({fadeIn:true;fadeOut:true;position:inside;height:100vh;width:100vw;});
 
     });
 </script> 
@@ -36,13 +36,13 @@
       <div class="row  d-flex align-items-center ">
           <div class="col-md-4  animated fadeInRight fast" style="width: 100%;">
                   <!-- Main image, on which xzoom will be applied -->
-                  <img class="xzoom img-fluid" id="main_image"  src="{{asset('Uploads/Products/'.$Product->image1)}}" xoriginal="{{asset('Uploads/Products/'.$Product->image1)}}" style="width:70%">
+                  <img class="xzoom img-fluid" id="main_image"  src="{{asset('Uploads/Products/'.$Product->image1)}}" xoriginal="{{asset('Uploads/Products/'.$Product->image1)}}" style="width:100%;height:100%;">
                   <!-- Thumbnails -->
                   <br>       <br>
                   @if($Product->image2 == '' && $Product->image3 == '' && $Product->image4 == '')
                   @else
                   <a href="{{asset('Uploads/Products/'.$Product->image1)}}">
-                      <img class="xzoom-gallery" width="80" src="{{asset('Uploads/Products/'.$Product->image1)}}">
+                      <img class="xzoom-gallery" width="80" src="{{asset('Uploads/Products/'.$Product->image1)}}" >
                   </a>
                    @endif
                   @if($Product->image2 == '')

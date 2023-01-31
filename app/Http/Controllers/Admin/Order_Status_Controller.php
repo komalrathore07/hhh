@@ -69,8 +69,8 @@ class Order_Status_Controller extends Controller
         	                    ($loginid, $name,$id)
         	                    {
         	                        $message->to($loginid, $name)->subject
-        	                        (' Your Gainaloe.com order '.$id.' is Shipped');
-        	                        $message->from('codetalentum@btao.in','Gainaloe');
+        	                        (' Your banarsilehngahouse.com order '.$id.' is Shipped');
+        	                        $message->from('banarsilehngahouse63@gmail.com','Banarsilehnga');
         	                        
         	                    });
            /* Email Alert Ends Here*/
@@ -117,8 +117,8 @@ class Order_Status_Controller extends Controller
         	                    ($loginid, $name,$id)
         	                    {
         	                        $message->to($loginid, $name)->subject
-        	                        ('Your Gainaloe.com order '.$id.' is Delivered');
-        	                        $message->from('codetalentum@btao.in','Gainaloe');
+        	                        ('Your banarsilehngahouse.com order '.$id.' is Delivered');
+        	                        $message->from('banarsilehngahouse63@gmail.com','Banarsilehnga');
         	                        
         	                    });
            /* Email Alert Ends Here*/
@@ -196,8 +196,8 @@ class Order_Status_Controller extends Controller
         	                    ($loginid, $name,$id)
         	                    {
         	                        $message->to($loginid, $name)->subject
-        	                        ('Your Gainaloe.com order '.$id.' is Cancelled');
-        	                        $message->from('codetalentum@btao.in','Gainaloe');
+        	                        ('Your banarsilehngahouse.com order '.$id.' is Cancelled');
+        	                        $message->from('banarsilehngahouse63@gmail.com','Banarsilehnga');
         	                        
         	                    });
            /* Email Alert Ends Here*/

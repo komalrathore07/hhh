@@ -13,7 +13,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     use Mail;
 
 
-    class booking    extends Controller
+    class booking extends Controller
     {
         public function opencheckoutpage()
         {
@@ -51,10 +51,10 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                 }
             
         }
-        public function  order_proceed(Request $request)
+        public function order_proceed(Request $request)
         {
               $validation =$request->validate([
-                      'Payment_Method'=>'required',
+                      'paymentmode'=>'required',
                       'Door_No'=>'required|max:60',
                       'LandMark'=>'required|max:60',
                       'city'=>'required|max:60|regex:/^[a-zA-Z\s]*$/',
@@ -62,7 +62,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
                       'pincode'=>'required|digits_between:4,10',
                       'mno'=>'required|digits:10',
                     
-                       'alternativemno'=>'nullable|digits:10',
+                      'alternativemno'=>'nullable|digits:10',
                       'country'=>'required|max:30|regex:/^[a-zA-Z\s]*$/',
                 // 'MobileNumber'=>'required|numeric',
                  
@@ -85,7 +85,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
 
                 $Delivery_Address=$address1.','.$address2.'<br>'.$city.','.$state.','.$country.'<br>'.$pincode.','.$mno.','.$alternativemno;
              /* Delivery Details*/
-                $p_method=$request->input('Payment_Method');
+                $p_method=$request->input('paymentmode');
             /* Order Details Starts Here*/
                 if(session('cart'))
                 {
@@ -141,7 +141,7 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     	                 <p><strong>Delivery Address:</strong>
     	               '.$Delivery_Address.'</p>
     	                <p> <strong>Total Amount:</strong>
-    	                '.$Amount.'</p>
+    	                '.$Amount.'</p> 
     	                 <p><strong>Payment Method:</strong>'.$p_method.'</p>';
     	                $emailcontent=array(
     	                    'WelcomeMessage'=>$welcomemessage,
@@ -152,10 +152,17 @@ namespace App\Http\Controllers\Product_Ordering_Controller;
     	                    ($loginid, $name,$id)
     	                    {
     	                        $message->to($loginid, $name)->subject
-    	                        ('Your Gainaloe.com order '.$id.' is Confirmed');
-    	                        $message->from('codetalentum@btao.in','Gainaloe');
+    	                        ('Your banarsilehngahouse.com order '.$id.' is Confirmed');
+    	                        $message->from('banarsilehngahouse63@gmail.com','banarsilehnga');
     	                        
     	                    });
+                         
+   
+                            // Mail::send(['html'=>'emails.order_email'], $emailcontent, function($message) {
+                            //    $message->to('komalrathore1101@gmail.com', 'Tutorials Point')->subject
+                            //       ('Your banarsilehngahouse.com order');
+                            //    $message->from('banarsilehngahouse63@gmail.com','banarsilehnga');
+                            // });
                     
                             Session::forget('cart');
                             Session::forget('discount');

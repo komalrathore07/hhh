@@ -152,7 +152,7 @@ class UserController extends Controller
                 $email=$request->input('email');
                 $subject=$request->input('subject');
                 $message=$request->input('message');
-                $emailto="rahulvijayanagaram@gmail.com";
+                $emailto="banarsilehngahouse63@gmail.com";
                 $recievername="Admin";
                 /* Mail Starts Here */
                    $welcomemessage='Hello Admin';
@@ -169,7 +169,7 @@ class UserController extends Controller
         	                    {
         	                        $message->to($emailto, $recievername)->subject
         	                        ('Hello Admin New Mail From your Client/Customer:'.$subject);
-        	                        $message->from('codetalentum@btao.in','CodeTalentum');
+        	                        $message->from('banarsilehngahouse63@gmail.com','banarsilehnga');
         	                        
         	                    });
                 /* Mail Ends Here */

@@ -69,10 +69,6 @@ class LinksController extends Controller
         $NewsLetter=NewsLetter::select('email','name')->distinct('name')->paginate(10);
         return view('dashboards.admin.NewsLetter')->with('NewsLetter', $NewsLetter);
     }
-    public function categories()
-    {
-        
-    }
     
     
     

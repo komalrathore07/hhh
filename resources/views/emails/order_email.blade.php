@@ -12,16 +12,18 @@
                 <table align="center" border="0" cellpadding="0" cellspacing="0" width="600" style="border: 1px solid #cccccc; border-collapse: collapse;">
                     <tr>
                         <td align="center"  style="">
-                            <img src="{{assets('assets/img/Logo.png')}}"  width="300" height="100" style="display:block;margin-top:20px;"/>
+                            <img src="{{asset('assets/img/Logo.png')}}"  width="300" height="100" style="display:block;margin-top:20px;"/>
                             
                         </td>
                     </tr>
                     <tr>
                         <td bgcolor="#ffffff" style="padding: 40px 30px 40px 30px;">
+                       
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td style="color: #153643; font-family: Arial, sans-serif; font-size: 24px;">
                                         <b>{!! $WelcomeMessage!!}</b>
+                                        
                                     </td>
                                 </tr>
                                 <tr>
@@ -73,6 +75,7 @@
                                     </td>
                                 </tr>
                             </table>
+
                         </td>
                     </tr>
                     <tr>
@@ -80,20 +83,20 @@
                             <table border="0" cellpadding="0" cellspacing="0" width="100%">
                                 <tr>
                                     <td style="color: #ffffff; font-family: Arial, sans-serif; font-size: 14px;" width="75%">
-                                       &copy;  Gainloe 2021<br/>
+                                       &copy;  Omenterprisesgroup.in 2021<br/>
                                        <font color="#ffffff">For More Details please feel free to  <a href="{{url('Contact')}}" style="color: #ffffff;text-decoration:underline;">ContactUs</font></a> 
                                     </td>
                                     <td align="right" width="25%">
                                         <table border="0" cellpadding="0" cellspacing="0">
                                             <tr>
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://twitter.com/codetalentum" style="color: #ffffff;">
+                                                    <a href="https://twitter.com/" style="color: #ffffff;">
                                                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/tw.gif" alt="Twitter" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
                                                 <td style="font-size: 0; line-height: 0;" width="20">&nbsp;</td>
                                                 <td style="font-family: Arial, sans-serif; font-size: 12px; font-weight: bold;">
-                                                    <a href="https://www.facebook.com/CodeTalentum" style="color: #ffffff;">
+                                                    <a href="https://www.facebook.com/" style="color: #ffffff;">
                                                         <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/210284/fb.gif" alt="Facebook" width="38" height="38" style="display: block;" border="0" />
                                                     </a>
                                                 </td>
